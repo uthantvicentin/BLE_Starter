@@ -16,7 +16,11 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#00B0FF</color>
-    <color name="colorPrimaryDark">#0091EA</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorBackground">#B5B5B5</color>
+    <color name="colorAccent">#B5B5B5</color>
+    <color name="colorRooms">#96C7CA</color>
+    <color name="colorButtons">#00E091</color>
+    <color name="colorBlue">#37C9EF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlueDark">#2A4251</color>
 </resources>
