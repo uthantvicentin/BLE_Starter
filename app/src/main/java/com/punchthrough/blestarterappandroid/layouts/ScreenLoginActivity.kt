@@ -12,6 +12,11 @@ class ScreenLoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_screen_login)
 
-9
+        val buttonContinue: ImageView = findViewById<ImageView>(R.id.buttonContinue)
+        buttonContinue.setOnClickListener {
+            val intent = Intent(this@ScreenLoginActivity, MainActivity::class.java)
+            intent.putExtra("key", "Kotlin")
+            startActivity(intent)
+        }
     }
 }

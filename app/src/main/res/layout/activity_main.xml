@@ -50,9 +50,12 @@
             android:id="@+id/button_back"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_70sdp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintEnd_toStartOf="@+id/scan_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/ic_back"/>
+            />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/scan_results_recycler_view"
