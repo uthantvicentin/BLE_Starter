@@ -1,4 +1,4 @@
-#Keep Distance
+# Keep Distance
 
 A COVID-19, causada pelo novo coronavírus, é uma das doenças mais avassaladoras que a humanidade enfrentou nos últimos tempos; sendo, também, muito recente, já que os primeiros casos foram noticiados no final de dezembro de 2019. Este novo vírus causou um surto de infecção que foi declarado como pandemia pela Organização Mundial de Saúde (OMS), o que significa dizer que o vírus pode se espalhar geograficamente e afetar um país ou o mundo. 
 
