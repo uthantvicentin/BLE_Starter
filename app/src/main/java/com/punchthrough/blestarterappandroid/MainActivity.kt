@@ -96,11 +96,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<View>(R.id.customView) as CustomView
-<<<<<<< HEAD
-
-        val buttonBack = findViewById<ImageView>(R.id.button_back)
-=======
->>>>>>> remotes/origin/dev
 
         val buttonBack: ImageView = findViewById<ImageView>(R.id.button_back)
         buttonBack.setOnClickListener {

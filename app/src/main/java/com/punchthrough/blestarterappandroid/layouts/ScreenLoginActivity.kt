@@ -11,8 +11,6 @@ class ScreenLoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_screen_login)
-<<<<<<< HEAD
-=======
 
         val buttonContinue: ImageView = findViewById<ImageView>(R.id.buttonContinue)
         buttonContinue.setOnClickListener {
@@ -20,6 +18,5 @@ class ScreenLoginActivity : AppCompatActivity() {
             intent.putExtra("key", "Kotlin")
             startActivity(intent)
         }
->>>>>>> remotes/origin/dev
     }
 }
