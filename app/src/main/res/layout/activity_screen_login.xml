@@ -87,6 +87,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/layoutButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
@@ -95,8 +96,7 @@
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
+        app:layout_constraintStart_toStartOf="parent" >
 
         <ImageView
             android:id="@+id/buttonContinue"
@@ -115,16 +115,22 @@
             />
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/termos_servico"
-        android:textSize="@dimen/_13ssp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="@dimen/_15sdp"
-        android:layout_marginStart="@dimen/_25sdp"
-        android:layout_marginEnd="@dimen/_8sdp" />
+        app:layout_constraintBottom_toTopOf="@+id/layoutButton">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/termos_servico"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_8sdp" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
