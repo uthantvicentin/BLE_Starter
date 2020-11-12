@@ -27,10 +27,10 @@
 
     <LinearLayout
         android:id="@+id/logo"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,11 +39,11 @@
         >
 
         <ImageView
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="8dp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
             android:background="@drawable/icon"
             app:layout_constraintTop_toTopOf="parent"
             />
@@ -54,9 +54,9 @@
         android:id="@+id/nameApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -68,7 +68,7 @@
             android:id="@+id/textKeep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="@dimen/_45sdp"
             android:text="@string/keep"
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/_65ssp"
@@ -77,8 +77,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="75dp"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_60sdp"
             android:text="@string/distance"
             android:textColor="@color/colorBlueDark"
             android:textSize="@dimen/_45ssp"
@@ -86,40 +86,45 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/button"
-        android:layout_width="185dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/button_continue"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_45sdp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         >
 
+        <ImageView
+            android:id="@+id/buttonContinue"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/button_continue"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_50sdp"
             android:text="@string/continuar"
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/_15ssp"
             />
-    </LinearLayout>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/termos_servico"
-        android:textSize="16sp"
+        android:textSize="@dimen/_13ssp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameApp"
-        />
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_8sdp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
