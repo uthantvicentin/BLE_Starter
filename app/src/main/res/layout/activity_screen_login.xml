@@ -22,8 +22,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    tools:context=".layouts.ScreenLoginActivity"
-    >
+    tools:context=".layouts.ScreenLoginActivity" >
 
     <LinearLayout
         android:id="@+id/logo"
@@ -35,8 +34,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent" >
 
         <ImageView
             android:layout_width="@dimen/_150sdp"
@@ -45,8 +43,7 @@
             android:layout_marginTop="@dimen/_30sdp"
             android:layout_marginEnd="@dimen/_8sdp"
             android:background="@drawable/icon"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
 
@@ -61,8 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/logo" >
 
         <TextView
             android:id="@+id/textKeep"
@@ -70,20 +66,22 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_45sdp"
             android:text="@string/keep"
+            android:fontFamily="@font/crushed_regular"
+            android:includeFontPadding="false"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_65ssp"
-            />
+            android:textSize="@dimen/_85ssp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_100sdp"
-            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginStart="@dimen/_95sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_70sdp"
             android:text="@string/distance"
+            android:fontFamily="@font/crushed_regular"
+            android:includeFontPadding="false"
             android:textColor="@color/colorBlueDark"
-            android:textSize="@dimen/_45ssp"
-            />
-
+            android:textSize="@dimen/_55ssp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -101,7 +99,7 @@
         <ImageView
             android:id="@+id/buttonContinue"
             android:layout_width="@dimen/_180sdp"
-            android:layout_height="@dimen/_50sdp"
+            android:layout_height="@dimen/_46sdp"
             android:background="@drawable/button_continue"/>
 
         <TextView
@@ -109,21 +107,36 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginStart="@dimen/_50sdp"
+            android:fontFamily="@font/khula_bold"
+            android:includeFontPadding="false"
             android:text="@string/continuar"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_15ssp"
-            />
+            android:textSize="@dimen/_15ssp" />
+
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/layoutButton">
+
+        <TextView
+            android:id="@+id/textTermo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/termos_serviço"
+            android:fontFamily="@font/rasa_bold"
+            android:includeFontPadding="false"
+=======
         app:layout_constraintBottom_toTopOf="@+id/layoutButton">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/termos_servico"
+>>>>>>> master
             android:textSize="@dimen/_13ssp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

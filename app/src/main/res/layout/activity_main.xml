@@ -29,14 +29,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/teste"
-        app:srcCompat="@drawable/backgroundapp"
-        />
+        app:srcCompat="@drawable/backgroundapp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical" >
 
         <Button
             android:id="@+id/scan_button"
@@ -46,20 +44,24 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_conversion_absoluteHeight="48dp"
-            tools:layout_editor_absoluteY="16dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_conversion_absoluteWidth="106dp"
-            />
+            android:layout_marginTop="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_back"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/scan_results_recycler_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/scan_button"
+            android:layout_marginTop="@dimen/_40sdp"
             tools:layout_conversion_absoluteHeight="0dp"
             tools:layout_conversion_absoluteWidth="0dp"
             tools:listitem="@layout/row_scan_result"

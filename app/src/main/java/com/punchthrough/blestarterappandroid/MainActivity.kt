@@ -95,6 +95,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //findViewById<View>(R.id.customView) as CustomView
 
+        val buttonBack = findViewById<ImageView>(R.id.button_back)
+
+        buttonBack.setOnClickListener {
+            onBackPressed()
+        }
+
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
         }
