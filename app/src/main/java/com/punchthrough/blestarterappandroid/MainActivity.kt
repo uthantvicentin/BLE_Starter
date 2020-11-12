@@ -92,8 +92,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        findViewById<View>(R.id.customView) as CustomView
+        setContentView(R.layout.activity_screen_login)
+        //findViewById<View>(R.id.customView) as CustomView
 
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())

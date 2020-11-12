@@ -74,6 +74,7 @@
             tools:layout_editor_absoluteY="72dp"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_conversion_absoluteWidth="411dp"
+            tools:ignore="MissingConstraints"
             />
 
         <!-- <Button

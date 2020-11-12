@@ -22,7 +22,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    android:orientation="vertical"
     tools:context=".layouts.ScreenLoginActivity"
     >
 
@@ -45,8 +44,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="8dp"
-            app:layout_constraintTop_toTopOf="parent"
             android:background="@drawable/icon"
+            app:layout_constraintTop_toTopOf="parent"
             />
 
     </LinearLayout>
@@ -55,13 +54,15 @@
         android:id="@+id/nameApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo">
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        >
 
         <TextView
             android:id="@+id/textKeep"
@@ -70,26 +71,18 @@
             android:layout_marginStart="50dp"
             android:text="@string/keep"
             android:textColor="@color/colorWhite"
-            android:fontFamily="@font/Crushed-Regular"
             android:textSize="@dimen/_65ssp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="75dp"
             android:text="@string/distance"
             android:textColor="@color/colorBlueDark"
-            android:layout_marginTop="75dp"
-            android:layout_marginStart="100dp"
-            android:textSize="@dimen/_45ssp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="230dp"
-            android:layout_marginStart="10dp"
-            android:textSize="16sp"
-            android:text="@string/termos_servico"/>
+            android:textSize="@dimen/_45ssp"
+            />
 
     </RelativeLayout>
 
@@ -99,24 +92,34 @@
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="50dp"
-        android:orientation="vertical"
         android:background="@drawable/button_continue"
         android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/continuar"
             android:layout_gravity="center"
-            android:textColor="@color/colorWhite"
             android:layout_marginTop="@dimen/_12sdp"
-            android:textSize="@dimen/_15ssp" />
-
-
+            android:text="@string/continuar"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp"
+            />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/termos_servico"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameApp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
