@@ -53,35 +53,40 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginTop="@dimen/_25sdp"
-        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginEnd="10dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" >
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        >
 
         <TextView
             android:id="@+id/textKeep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_45sdp"
-            android:text="@string/keep"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginEnd="169dp"
             android:fontFamily="@font/crushed_regular"
             android:includeFontPadding="false"
+            android:text="@string/keep"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_85ssp" />
+            android:textSize="@dimen/_85ssp"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_95sdp"
-            android:layout_marginEnd="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_70sdp"
-            android:text="@string/distance"
+            android:layout_marginEnd="@dimen/_15sdp"
             android:fontFamily="@font/crushed_regular"
             android:includeFontPadding="false"
+            android:text="@string/distance"
             android:textColor="@color/colorBlueDark"
-            android:textSize="@dimen/_55ssp" />
+            android:textSize="@dimen/_55ssp"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -105,36 +110,36 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_alignStart="@+id/buttonContinue"
+            android:layout_alignEnd="@+id/buttonContinue"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/khula_bold"
+            android:gravity="center"
             android:includeFontPadding="false"
             android:text="@string/continuar"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_15ssp" />
+            android:textSize="@dimen/_15ssp"
+            />
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textTermo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/layoutButton">
-
-        <TextView
-            android:id="@+id/textTermo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/termos_serviço"
-            android:fontFamily="@font/rasa_bold"
-            android:includeFontPadding="false"
-            android:textSize="@dimen/_13ssp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="@dimen/_15sdp"
-            android:layout_marginStart="@dimen/_25sdp"
-            android:layout_marginEnd="@dimen/_8sdp" />
-
-    </RelativeLayout>
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:fontFamily="@font/rasa_bold"
+        android:includeFontPadding="false"
+        android:text="@string/termos_serviço"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameApp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
