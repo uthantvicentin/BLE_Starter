@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2019 Punch Through Design LLC
+  ~ Copyright 2020 Punch Through Design LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -14,13 +14,8 @@
   ~ limitations under the License.
   -->
 
-<resources>
-    <string name="app_name">BLE Starter</string>
-    <string name="ble_playground">BLE Playground</string>
-    <string name="teste">teste</string>
-    <string name="start_scan">Start Scan</string>
-    <string name="keep">KEEP</string>
-    <string name="distance">Distance</string>
-    <string name="continuar">CONTINUAR</string>
-    <string name="termos_serviço">Ao continuar você concorda com nossos termos de serviço.</string>
-</resources>
+<vector android:height="50dp" android:tint="?attr/colorControlNormal"
+    android:viewportHeight="24" android:viewportWidth="24"
+    android:width="50dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@android:color/white" android:pathData="M15.41,7.41L14,6l-6,6 6,6 1.41,-1.41L10.83,12z"/>
+</vector>
