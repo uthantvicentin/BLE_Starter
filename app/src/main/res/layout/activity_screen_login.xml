@@ -118,7 +118,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/layoutButton">
 
@@ -126,24 +125,14 @@
             android:id="@+id/textTermo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/termos_serviço"
+            android:text="@string/termos_servico"
             android:fontFamily="@font/rasa_bold"
-            android:includeFontPadding="false"
-=======
-        app:layout_constraintBottom_toTopOf="@+id/layoutButton">
+            android:includeFontPadding="false"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/termos_servico"
->>>>>>> master
-            android:textSize="@dimen/_13ssp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="@dimen/_15sdp"
-            android:layout_marginStart="@dimen/_25sdp"
-            android:layout_marginEnd="@dimen/_8sdp" />
-
+            android:text="@string/termos_servico"/>
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
