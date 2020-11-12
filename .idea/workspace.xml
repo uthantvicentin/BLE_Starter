@@ -81,6 +81,11 @@
         <option value="Wan-Song" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jmy1f20kOcn4kvqoR0XXCDscUn" />
@@ -244,6 +249,10 @@
     </state>
     <state x="565" y="422" width="442" height="521" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1604706153474" />
     <state x="2238" y="721" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1080.1920@1920.0.1080.1920" timestamp="1604686902858" />
+    <state x="686" y="421" width="537" height="262" key="Github.CreatePullRequestDialog" timestamp="1605151417761">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="686" y="421" width="537" height="262" key="Github.CreatePullRequestDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605151417761" />
     <state x="812" y="448" width="286" height="217" key="Github.ShareDialog" timestamp="1604706295147">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -272,14 +281,19 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="70" y="27" width="1169" height="737" key="SettingsEditor/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1605138032764" />
-    <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604706267411">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="555" y="287" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605151323448">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state x="555" y="287" width="800" height="528" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1605151323448" />
     <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1604706267411" />
     <state x="732" y="332" width="446" height="440" key="chooseDestDirectoryDialog" timestamp="1605135818918">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="732" y="332" width="446" height="440" key="chooseDestDirectoryDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605135818918" />
+    <state x="559" y="263" width="782" height="579" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1605151414817">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="559" y="263" width="782" height="579" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605151414816" />
     <state x="357" y="458" key="com.intellij.ide.util.TipDialog" timestamp="1605135723885">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
