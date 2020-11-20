@@ -24,6 +24,8 @@
     tools:context=".layouts.RoomActivity"
     android:background="@color/colorBackground" >
 
+
+
     <ImageView
         android:id="@+id/rectangle_bottom"
         android:layout_width="match_parent"
