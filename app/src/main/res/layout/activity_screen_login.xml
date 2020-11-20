@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
   ~ Copyright 2020 Punch Through Design LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -107,7 +108,7 @@
         android:layout_marginBottom="@dimen/_64sdp"
         android:fontFamily="@font/rasa_bold"
         android:includeFontPadding="false"
-        android:text="@string/termos_serviço"
+        android:text="@string/termos_servico"
         android:textSize="@dimen/_13ssp"
         app:layout_constraintBottom_toTopOf="@+id/buttonContinue"
         app:layout_constraintEnd_toEndOf="parent"
