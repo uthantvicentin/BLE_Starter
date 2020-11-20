@@ -23,4 +23,7 @@
     <color name="colorBlue">#37C9EF</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlueDark">#2A4251</color>
+    <color name="colorGray">#E6E8DD</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorBlueRec">#0000FF</color>
 </resources>

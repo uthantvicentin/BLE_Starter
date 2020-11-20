@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2019 Punch Through Design LLC
+  ~ Copyright 2020 Punch Through Design LLC
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -14,19 +15,9 @@
   ~ limitations under the License.
   -->
 
-<resources>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme"
-        parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
+    <solid android:color="@color/colorGray" />
 
-
-    <!-- Developer should create a style -->
-    <style name="noAnimTheme" parent="android:Theme">
-        <item name="android:windowAnimationStyle">@null</item>
-    </style>
-
-</resources>
+</shape>

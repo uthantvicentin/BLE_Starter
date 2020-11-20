@@ -40,6 +40,9 @@ import androidx.recyclerview.widget.SimpleItemAnimator
 import com.punchthrough.blestarterappandroid.ble.ConnectionEventListener
 import com.punchthrough.blestarterappandroid.ble.ConnectionManager
 import com.punchthrough.blestarterappandroid.ble.CustomView
+import com.punchthrough.blestarterappandroid.layouts.HomeActivity
+import com.punchthrough.blestarterappandroid.layouts.PerfilActivity
+import com.punchthrough.blestarterappandroid.layouts.RoomActivity
 import com.punchthrough.blestarterappandroid.layouts.ScreenLoginActivity
 import kotlinx.android.synthetic.main.activity_main.scan_button
 import kotlinx.android.synthetic.main.activity_main.scan_results_recycler_view
@@ -49,7 +52,7 @@ import timber.log.Timber
 private const val ENABLE_BLUETOOTH_REQUEST_CODE = 1
 private const val LOCATION_PERMISSION_REQUEST_CODE = 2
 class MainActivity : AppCompatActivity() {
-    /*******************************************
+    /******************************************
      * Properties
      *******************************************/
 
@@ -94,12 +97,31 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_radar)
         findViewById<View>(R.id.customView) as CustomView
 
-        val buttonBack: ImageView = findViewById<ImageView>(R.id.button_back)
-        buttonBack.setOnClickListener {
-            onBackPressed()
+        val buttonHome: ImageView = findViewById<ImageView>(R.id.button_home)
+        buttonHome.setOnClickListener {
+            val intent = Intent(this@MainActivity, HomeActivity::class.java)
+            intent.putExtra("key", "Kotlin")
+            startActivity(intent)
+            this.overridePendingTransition(0, 0)
+        }
+
+        val buttonRoom: ImageView = findViewById<ImageView>(R.id.button_rooms)
+        buttonRoom.setOnClickListener {
+            val intent = Intent(this@MainActivity, RoomActivity::class.java)
+            intent.putExtra("key", "Kotlin")
+            startActivity(intent)
+            this.overridePendingTransition(0, 0)
+        }
+
+        val buttonPerfil: ImageView = findViewById<ImageView>(R.id.button_perfil)
+        buttonPerfil.setOnClickListener {
+            val intent = Intent(this@MainActivity, PerfilActivity::class.java)
+            intent.putExtra("key", "Kotlin")
+            startActivity(intent)
+            this.overridePendingTransition(0, 0)
         }
 
         if (BuildConfig.DEBUG) {
@@ -115,6 +137,11 @@ class MainActivity : AppCompatActivity() {
         if (!bluetoothAdapter.isEnabled) {
             promptEnableBluetooth()
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(0, 0)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
