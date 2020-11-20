@@ -77,8 +77,8 @@ class CustomView : View {
         val radius = 400f
         val firstBeaconY = 0
         val firstBeaconX = 0
-        val secondBeaconY = canvas.height - 10
-        val secondBeaconX = canvas.width - 10
+        val secondBeaconY = height - 160
+        val secondBeaconX = width - 10
         while (angleDeg != 360) {
             firstxPos[angleDeg] =
                 radius * Math.cos(Math.toRadians(angleDeg.toDouble())).toFloat() + firstBeaconX
