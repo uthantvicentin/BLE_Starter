@@ -26,4 +26,6 @@
     <color name="colorGray">#E6E8DD</color>
     <color name="colorRed">#FF0000</color>
     <color name="colorBlueRec">#0000FF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTextHint">#7B7B7B</color>
 </resources>
