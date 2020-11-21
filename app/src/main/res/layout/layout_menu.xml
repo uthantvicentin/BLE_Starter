@@ -35,8 +35,8 @@
 
     <ImageView
         android:id="@+id/button_home"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
         app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
         app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
         app:layout_constraintStart_toStartOf="@id/rectangle_bottom"
@@ -48,8 +48,8 @@
 
     <ImageView
         android:id="@+id/button_rooms"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
         app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
         app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,8 +61,8 @@
 
     <ImageView
         android:id="@+id/button_radar"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
         app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
         app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
         app:layout_constraintStart_toStartOf="@id/rectangle_bottom"
@@ -74,8 +74,8 @@
 
     <ImageView
         android:id="@+id/button_perfil"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
         app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
         app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
         app:layout_constraintStart_toStartOf="@id/rectangle_bottom"

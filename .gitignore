@@ -19,8 +19,8 @@ out/
 
 # Gradle files
 .gradle/
-.gradle/6.1.1/
-.gradle/buildOutputCleanup/
+.gradle/6.1.1/*
+.gradle/buildOutputCleanup/*
 .gradle/*
 build/*
 .idea/workspace.xml
