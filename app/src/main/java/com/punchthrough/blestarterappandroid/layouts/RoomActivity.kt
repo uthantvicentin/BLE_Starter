@@ -17,16 +17,24 @@
 package com.punchthrough.blestarterappandroid.layouts
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.punchthrough.blestarterappandroid.MainActivity
 import com.punchthrough.blestarterappandroid.R
+
 
 class RoomActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room)
+
+        val buttonRoom: ImageView = findViewById<ImageView>(R.id.button_rooms)
+        buttonRoom.setImageResource(R.drawable.salas_verde)
+
+        val textRoom: TextView = findViewById<TextView>(R.id.text_room)
+        textRoom.setTextColor(resources.getColor(R.color.colorButtons) )
 
         val buttonHome: ImageView = findViewById<ImageView>(R.id.button_home)
         buttonHome.setOnClickListener {

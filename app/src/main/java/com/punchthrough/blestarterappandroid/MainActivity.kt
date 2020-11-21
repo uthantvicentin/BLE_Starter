@@ -31,6 +31,7 @@ import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -99,6 +100,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_radar)
         findViewById<View>(R.id.customView) as CustomView
+
+        val buttonRadar: ImageView = findViewById<ImageView>(R.id.button_radar)
+        buttonRadar.setImageResource(R.drawable.radar_verde)
+
+        val textRadar: TextView = findViewById<TextView>(R.id.text_radar)
+        textRadar.setTextColor(resources.getColor(R.color.colorButtons) )
 
         val buttonHome: ImageView = findViewById<ImageView>(R.id.button_home)
         buttonHome.setOnClickListener {
