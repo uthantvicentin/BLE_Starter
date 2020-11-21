@@ -15,22 +15,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a74c6c99-cf77-498c-bc84-48d596cbe8cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/punchthrough/blestarterappandroid/layouts/LayoutMenu.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_radar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_radar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_room.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/menu.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_-_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="6763ea730305" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -93,22 +96,25 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-667027287">
+      <recent name="com.punchthrough.blestarterappandroid.layouts" />
+    </key>
     <key name="android.template.341642070">
       <recent name="com.punchthrough.blestarterappandroid.layouts" />
     </key>
     <key name="android.template.-1940568522">
       <recent name="com.punchthrough.blestarterappandroid.layouts" />
     </key>
-    <key name="android.template.-667027287">
-      <recent name="com.punchthrough.blestarterappandroid.layouts" />
-    </key>
-    <key name="android.template.-881346793">
+    <key name="android.template.-681904445">
       <recent name="com.punchthrough.blestarterappandroid.layouts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/src/main/res/font" />
+    </key>
+    <key name="android.template.-881346793">
+      <recent name="com.punchthrough.blestarterappandroid.layouts" />
     </key>
   </component>
   <component name="RunManager">
@@ -273,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605902483662</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="action bar on menu.xml&#10;alteration in all activities.">
+      <created>1605929517473</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605929517473</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -287,7 +300,8 @@
     <MESSAGE value="Screens and event button." />
     <MESSAGE value="Search in activity_room.xml" />
     <MESSAGE value="Icon activity_screen_login.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Icon activity_screen_login.xml" />
+    <MESSAGE value="action bar on menu.xml&#10;alteration in all activities." />
+    <option name="LAST_COMMIT_MESSAGE" value="action bar on menu.xml&#10;alteration in all activities." />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="215" width="800" height="684" key="#Notifications" timestamp="1604706002272">
@@ -298,10 +312,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="636" y="195" width="638" height="723" key="#app/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1605137158274" />
-    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605155953355">
+    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605930243914">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605155953355" />
+    <state x="693" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605930243914" />
     <state x="693" y="302" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1605139494692" />
     <state x="543" y="310" width="824" height="484" key="AndroidCreateResourceDirectoryDialog" timestamp="1605152485134">
       <screen x="0" y="25" width="1920" height="1055" />
@@ -318,10 +332,10 @@
     </state>
     <state x="809" y="367" width="292" height="379" key="AndroidCreateXmlResourceDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605929368048" />
     <state x="809" y="368" width="291" height="378" key="AndroidCreateXmlResourceDialog/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1604687968131" />
-    <state x="547" y="111" width="972" height="856" key="CommitChangelistDialog2" timestamp="1605902483382">
+    <state x="547" y="111" width="972" height="856" key="CommitChangelistDialog2" timestamp="1605929517253">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="547" y="111" width="972" height="856" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1605902483382" />
+    <state x="547" y="111" width="972" height="856" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1605929517253" />
     <state x="547" y="113" width="816" height="887" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1605140461137" />
     <state x="177" y="116" width="1536" height="874" key="DiffContextDialog" timestamp="1605152417513">
       <screen x="0" y="25" width="1920" height="1055" />
