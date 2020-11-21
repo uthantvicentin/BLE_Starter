@@ -24,67 +24,37 @@
     tools:context=".layouts.HomeActivity"
     android:background="@color/colorBackground" >
 
-    <ImageView
-        android:id="@+id/rectangle_bottom"
+    <include layout="@layout/layout_menu"
+        android:id="@+id/bar_action"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_75ssp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="@dimen/_55sdp"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/rectangle"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <ImageView
         android:id="@+id/button_home"
-        android:layout_width="@dimen/_55sdp"
-        android:layout_height="@dimen/_55sdp"
-        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="@id/bar_action"
+        app:layout_constraintBottom_toBottomOf="@id/bar_action"
+        app:layout_constraintStart_toStartOf="@id/bar_action"
+        app:layout_constraintEnd_toEndOf="@id/bar_action"
         android:layout_marginEnd="@dimen/_230sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         app:srcCompat="@drawable/home_verde"
         />
 
-    <ImageView
-        android:id="@+id/button_rooms"
-        android:layout_width="@dimen/_55sdp"
-        android:layout_height="@dimen/_55sdp"
-        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="@dimen/_75sdp"
-        app:srcCompat="@drawable/salas_preto"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:textColor="@color/colorButtons"
+        app:layout_constraintStart_toStartOf="@id/button_home"
+        app:layout_constraintEnd_toEndOf="@id/button_home"
+        app:layout_constraintBottom_toBottomOf="@id/bar_action"
+        app:layout_constraintTop_toBottomOf="@id/button_home"
         />
-
-    <ImageView
-        android:id="@+id/button_radar"
-        android:layout_width="@dimen/_55sdp"
-        android:layout_height="@dimen/_55sdp"
-        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="@dimen/_75sdp"
-        app:srcCompat="@drawable/radar_preto"
-        />
-
-    <ImageView
-        android:id="@+id/button_perfil"
-        android:layout_width="@dimen/_55sdp"
-        android:layout_height="@dimen/_55sdp"
-        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="@dimen/_230sdp"
-
-        app:srcCompat="@drawable/perfil_preto" />
-
-
-
-
-
 
 
 

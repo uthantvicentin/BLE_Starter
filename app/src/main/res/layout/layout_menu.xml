@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 Punch Through Design LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground" >
+
+    <ImageView
+        android:id="@+id/rectangle_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rectangle"
+        />
+
+    <ImageView
+        android:id="@+id/button_home"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintStart_toStartOf="@id/rectangle_bottom"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom"
+        android:layout_marginEnd="@dimen/_230sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:srcCompat="@drawable/home_preto"
+        />
+
+    <ImageView
+        android:id="@+id/button_rooms"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_75sdp"
+        app:srcCompat="@drawable/salas_preto"
+        />
+
+    <ImageView
+        android:id="@+id/button_radar"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintStart_toStartOf="@id/rectangle_bottom"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom"
+        android:layout_marginStart="@dimen/_75sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:srcCompat="@drawable/radar_preto"
+        />
+
+    <ImageView
+        android:id="@+id/button_perfil"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintStart_toStartOf="@id/rectangle_bottom"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_230sdp"
+
+        app:srcCompat="@drawable/perfil_preto" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="@id/button_home"
+        app:layout_constraintEnd_toEndOf="@id/button_home"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintTop_toBottomOf="@id/button_home"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salas"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="@id/button_rooms"
+        app:layout_constraintEnd_toEndOf="@id/button_rooms"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintTop_toBottomOf="@id/button_rooms"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radar"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="@id/button_radar"
+        app:layout_constraintEnd_toEndOf="@id/button_radar"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintTop_toBottomOf="@id/button_radar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/perfil"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="@id/button_perfil"
+        app:layout_constraintEnd_toEndOf="@id/button_perfil"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintTop_toBottomOf="@id/button_perfil"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

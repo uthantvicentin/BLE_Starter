@@ -28,4 +28,6 @@
     <color name="colorBlueRec">#0000FF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorTextHint">#7B7B7B</color>
+    <color name="colorPurpleLogo">#4703A6</color>
+    <color name="colorGreenLogo">#00B559</color>
 </resources>
