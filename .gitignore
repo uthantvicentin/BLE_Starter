@@ -18,10 +18,11 @@ out/
 # release/
 
 # Gradle files
-.gradle
+.gradle/
+.gradle/6.1.1/
+.gradle/buildOutputCleanup/
 .gradle/*
 build/*
-.gradle/
 .idea/workspace.xml
 
 # Local configuration file (sdk path, etc)
