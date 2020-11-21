@@ -15,11 +15,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a74c6c99-cf77-498c-bc84-48d596cbe8cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_keep_distance.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_keep_distance2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_perfil.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_radar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_radar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_room.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_screen_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +52,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -262,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605891647360</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Icon activity_screen_login.xml">
+      <created>1605902483662</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605902483662</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -275,7 +286,8 @@
     <MESSAGE value="Edit all." />
     <MESSAGE value="Screens and event button." />
     <MESSAGE value="Search in activity_room.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search in activity_room.xml" />
+    <MESSAGE value="Icon activity_screen_login.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Icon activity_screen_login.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="215" width="800" height="684" key="#Notifications" timestamp="1604706002272">
@@ -296,20 +308,20 @@
     </state>
     <state x="543" y="310" width="824" height="484" key="AndroidCreateResourceDirectoryDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605152485134" />
     <state x="543" y="311" key="AndroidCreateResourceDirectoryDialog/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1605140039708" />
-    <state x="543" y="310" width="824" height="484" key="AndroidCreateResourceFileDialog" timestamp="1605815660854">
+    <state x="543" y="310" width="824" height="484" key="AndroidCreateResourceFileDialog" timestamp="1605927316833">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="543" y="310" width="824" height="484" key="AndroidCreateResourceFileDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605815660854" />
+    <state x="543" y="310" width="824" height="484" key="AndroidCreateResourceFileDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605927316833" />
     <state x="543" y="311" key="AndroidCreateResourceFileDialog/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1605139436298" />
-    <state x="809" y="367" width="292" height="379" key="AndroidCreateXmlResourceDialog" timestamp="1605889768877">
+    <state x="809" y="367" width="292" height="379" key="AndroidCreateXmlResourceDialog" timestamp="1605929368048">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="809" y="367" width="292" height="379" key="AndroidCreateXmlResourceDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605889768877" />
+    <state x="809" y="367" width="292" height="379" key="AndroidCreateXmlResourceDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605929368048" />
     <state x="809" y="368" width="291" height="378" key="AndroidCreateXmlResourceDialog/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1604687968131" />
-    <state x="547" y="111" width="972" height="856" key="CommitChangelistDialog2" timestamp="1605902461217">
+    <state x="547" y="111" width="972" height="856" key="CommitChangelistDialog2" timestamp="1605902483382">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="547" y="111" width="972" height="856" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1605902461217" />
+    <state x="547" y="111" width="972" height="856" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1605902483382" />
     <state x="547" y="113" width="816" height="887" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1605140461137" />
     <state x="177" y="116" width="1536" height="874" key="DiffContextDialog" timestamp="1605152417513">
       <screen x="0" y="25" width="1920" height="1055" />
@@ -320,10 +332,10 @@
     </state>
     <state x="565" y="422" width="442" height="521" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1604706153474" />
     <state x="2238" y="721" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1080.1920@1920.0.1080.1920" timestamp="1604686902858" />
-    <state x="686" y="421" width="537" height="262" key="Github.CreatePullRequestDialog" timestamp="1605891827056">
+    <state x="686" y="421" width="547" height="262" key="Github.CreatePullRequestDialog" timestamp="1605902604307">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="686" y="421" width="537" height="262" key="Github.CreatePullRequestDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605891827056" />
+    <state x="686" y="421" width="547" height="262" key="Github.CreatePullRequestDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605902604307" />
     <state x="812" y="448" width="286" height="217" key="Github.ShareDialog" timestamp="1604706295147">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -356,10 +368,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="70" y="27" width="1169" height="737" key="SettingsEditor/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1605138032764" />
-    <state x="555" y="287" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605891674477">
+    <state x="555" y="287" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605902502648">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="555" y="287" width="800" height="528" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1605891674477" />
+    <state x="555" y="287" width="800" height="528" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1605902502648" />
     <state x="555" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1080.1920@0.27.1920.1053" timestamp="1604706267411" />
     <state x="732" y="332" width="446" height="440" key="chooseDestDirectoryDialog" timestamp="1605899510515">
       <screen x="0" y="25" width="1920" height="1055" />
