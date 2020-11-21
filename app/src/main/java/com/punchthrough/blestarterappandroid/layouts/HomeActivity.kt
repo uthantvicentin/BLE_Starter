@@ -20,6 +20,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import com.punchthrough.blestarterappandroid.MainActivity
 import com.punchthrough.blestarterappandroid.R
 
@@ -27,6 +28,12 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        val buttonHome: ImageView = findViewById<ImageView>(R.id.button_home)
+        buttonHome.setImageResource(R.drawable.home_verde)
+
+        val textHome: TextView = findViewById<TextView>(R.id.text_home)
+        textHome.setTextColor(resources.getColor(R.color.colorButtons) )
 
         val buttonRadar: ImageView = findViewById<ImageView>(R.id.button_radar)
         buttonRadar.setOnClickListener {

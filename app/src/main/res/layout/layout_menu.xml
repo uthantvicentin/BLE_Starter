@@ -85,6 +85,7 @@
         app:srcCompat="@drawable/perfil_preto" />
 
     <TextView
+        android:id="@+id/text_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/home"
@@ -96,6 +97,7 @@
         />
 
     <TextView
+        android:id="@+id/text_room"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/salas"
@@ -107,6 +109,7 @@
         />
 
     <TextView
+        android:id="@+id/text_radar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/radar"
@@ -118,6 +121,7 @@
         />
 
     <TextView
+        android:id="@+id/text_perfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/perfil"

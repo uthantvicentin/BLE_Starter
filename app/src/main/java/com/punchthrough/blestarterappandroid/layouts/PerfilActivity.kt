@@ -20,6 +20,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import com.punchthrough.blestarterappandroid.MainActivity
 import com.punchthrough.blestarterappandroid.R
 
@@ -27,6 +28,12 @@ class PerfilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perfil)
+
+        val buttonPerfil: ImageView = findViewById<ImageView>(R.id.button_perfil)
+        buttonPerfil.setImageResource(R.drawable.perfil_verde)
+
+        val textPerfil: TextView = findViewById<TextView>(R.id.text_perfil)
+        textPerfil.setTextColor(resources.getColor(R.color.colorButtons) )
 
         val buttonHome: ImageView = findViewById<ImageView>(R.id.button_home)
         buttonHome.setOnClickListener {
