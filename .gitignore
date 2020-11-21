@@ -20,7 +20,10 @@ out/
 # Gradle files
 .gradle
 .gradle/*
-build/
+build/*
+.gradle/
+.idea/workspace.xml
+
 # Local configuration file (sdk path, etc)
 local.properties
 
