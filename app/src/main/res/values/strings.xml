@@ -22,17 +22,10 @@
     <string name="keep">Keep</string>
     <string name="distance">Distance</string>
     <string name="continuar">CONTINUAR</string>
-<<<<<<< HEAD
-    <string name="termos_serviço">Ao continuar você concorda com nossos termos de serviço.</string>
     <string name="procurar_sala">Procurar sala</string>
-<<<<<<< HEAD
-=======
-    <string name="termos_servico">Ao continuar você concorda com nossos termos de serviço.</string>
->>>>>>> master
-=======
-    <string name="home">Home</string>
+   <string name="home">Home</string>
     <string name="salas">Salas</string>
     <string name="radar">Radar</string>
     <string name="perfil">Perfil</string>
->>>>>>> e590acdb965265a5bdcb74da5e1276f113872164
+    <string name="termos_servico">Ao continuar você concorda com nossos termos de serviço.</string>
 </resources>
