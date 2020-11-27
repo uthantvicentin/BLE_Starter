@@ -23,9 +23,8 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         >
-        <activity android:name=".layouts.LayoutMenu"></activity>
         <activity android:name=".layouts.PerfilActivity" />
-        <activity android:name=".layouts.HomeActivity"></activity>
+        <activity android:name=".layouts.HomeActivity"/>
         <activity android:name=".layouts.RoomActivity" />
         <activity android:name=".layouts.RadarActivity" />
         <activity android:name=".MainActivity" />

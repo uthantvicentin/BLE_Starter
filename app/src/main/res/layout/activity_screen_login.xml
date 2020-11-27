@@ -27,7 +27,7 @@
     <ImageView
         android:id="@+id/icon_logo"
         android:layout_width="@dimen/_200sdp"
-        android:layout_height="@dimen/_260sdp"
+        android:layout_height="@dimen/_280sdp"
         android:layout_marginTop="@dimen/_50sdp"
         android:background="@drawable/logo_keep_distance"
         app:layout_constraintEnd_toEndOf="parent"
