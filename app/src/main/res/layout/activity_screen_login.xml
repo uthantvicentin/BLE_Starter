@@ -37,7 +37,7 @@
 
     <ImageView
         android:id="@+id/buttonContinue"
-        android:layout_width="@dimen/_180sdp"
+        android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_46sdp"
         android:layout_marginBottom="@dimen/_40sdp"
         app:srcCompat="@drawable/button_continue"

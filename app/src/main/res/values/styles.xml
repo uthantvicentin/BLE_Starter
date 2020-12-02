@@ -29,4 +29,11 @@
         <item name="android:windowAnimationStyle">@null</item>
     </style>
 
+    <style name="Line_divider">
+        <item name="android:layout_width">@dimen/_250sdp</item>
+        <item name="android:layout_height">@dimen/_2sdp</item>
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+
+
 </resources>

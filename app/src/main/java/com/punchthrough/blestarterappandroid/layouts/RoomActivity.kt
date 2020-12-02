@@ -16,16 +16,21 @@
 
 package com.punchthrough.blestarterappandroid.layouts
 
+import RoomViewHolder
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.punchthrough.blestarterappandroid.MainActivity
 import com.punchthrough.blestarterappandroid.R
-
+import com.punchthrough.blestarterappandroid.classes.Rooms
 
 class RoomActivity : AppCompatActivity() {
+    lateinit var contacts: ArrayList<Rooms>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room)
@@ -34,7 +39,7 @@ class RoomActivity : AppCompatActivity() {
         buttonRoom.setImageResource(R.drawable.salas_verde)
 
         val textRoom: TextView = findViewById<TextView>(R.id.text_room)
-        textRoom.setTextColor(resources.getColor(R.color.colorButtons) )
+        textRoom.setTextColor(resources.getColor(R.color.colorButtons))
 
         val buttonHome: ImageView = findViewById<ImageView>(R.id.button_home)
         buttonHome.setOnClickListener {
@@ -58,7 +63,20 @@ class RoomActivity : AppCompatActivity() {
             intent.putExtra("key", "Kotlin")
             startActivity(intent)
             this.overridePendingTransition(0, 0)
+
         }
+// Lookup the recyclerview in activity layout
+        val rvContacts = findViewById<View>(R.id.rvContacts) as RecyclerView
+        // Initialize contacts
+        contacts = Rooms.createContactsList(40)
+        // Create adapter passing in the sample user data
+        val adapter = RoomViewHolder(contacts)
+
+        // Attach the adapter to the recyclerview to populate items
+        rvContacts.adapter = adapter
+        // Set layout manager to position the items
+        rvContacts.layoutManager = LinearLayoutManager(this)
+        // That's all
     }
 
     override fun onPause() {
