@@ -27,22 +27,86 @@
         android:id="@+id/rectangle_bottom"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_55ssp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/rectangle_bottom_home"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_55ssp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/tint_ripple"
+        android:tintMode="src_in"
+        android:src="@drawable/rectangle"
+        android:layout_marginStart="@dimen/_15sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/rectangle"
+        app:tint="@android:color/transparent"
         />
+
+    <ImageView
+        android:id="@+id/rectangle_bottom_perfil"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_height="@dimen/_55ssp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/tint_ripple"
+        android:tintMode="src_in"
+        android:src="@drawable/rectangle"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@android:color/transparent"
+        />
+
+    <ImageView
+        android:id="@+id/rectangle_bottom_room"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_height="@dimen/_55ssp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/tint_ripple"
+        android:tintMode="src_in"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rectangle_bottom_home"
+        app:layout_constraintEnd_toStartOf="@id/rectangle_bottom_radar"
+        app:tint="@android:color/transparent"
+        />
+
+    <ImageView
+        android:id="@+id/rectangle_bottom_radar"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_height="@dimen/_55ssp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/tint_ripple"
+        android:tintMode="src_in"
+        android:src="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rectangle_bottom_perfil"
+        app:layout_constraintStart_toEndOf="@id/rectangle_bottom_room"
+        app:tint="@android:color/transparent"
+        />
+
 
     <ImageView
         android:id="@+id/button_home"
         android:layout_width="@dimen/_35sdp"
         android:layout_height="@dimen/_35sdp"
-        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
-        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
-        app:layout_constraintStart_toStartOf="@id/rectangle_bottom"
-        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom"
-        android:layout_marginEnd="@dimen/_230sdp"
         android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/rectangle_bottom_home"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom_home"
+        app:layout_constraintTop_toTopOf="@id/rectangle_bottom_home"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom_home"
         app:srcCompat="@drawable/home_preto"
         />
 
@@ -50,12 +114,11 @@
         android:id="@+id/button_rooms"
         android:layout_width="@dimen/_35sdp"
         android:layout_height="@dimen/_35sdp"
-        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
-        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_75sdp"
+        app:layout_constraintStart_toStartOf="@id/rectangle_bottom_room"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom_room"
+        app:layout_constraintTop_toTopOf="@id/rectangle_bottom_room"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom_room"
         app:srcCompat="@drawable/salas_preto"
         />
 
@@ -63,12 +126,11 @@
         android:id="@+id/button_radar"
         android:layout_width="@dimen/_35sdp"
         android:layout_height="@dimen/_35sdp"
-        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
-        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
-        app:layout_constraintStart_toStartOf="@id/rectangle_bottom"
-        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom"
-        android:layout_marginStart="@dimen/_75sdp"
         android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/rectangle_bottom_radar"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom_radar"
+        app:layout_constraintTop_toTopOf="@id/rectangle_bottom_radar"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom_radar"
         app:srcCompat="@drawable/radar_preto"
         />
 
@@ -76,13 +138,11 @@
         android:id="@+id/button_perfil"
         android:layout_width="@dimen/_35sdp"
         android:layout_height="@dimen/_35sdp"
-        app:layout_constraintTop_toTopOf="@id/rectangle_bottom"
-        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
-        app:layout_constraintStart_toStartOf="@id/rectangle_bottom"
-        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom"
         android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_marginStart="@dimen/_230sdp"
-
+        app:layout_constraintStart_toStartOf="@id/rectangle_bottom_perfil"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom_perfil"
+        app:layout_constraintTop_toTopOf="@id/rectangle_bottom_perfil"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_bottom_perfil"
         app:srcCompat="@drawable/perfil_preto" />
 
     <TextView
@@ -93,7 +153,7 @@
         android:textColor="@color/colorBlack"
         app:layout_constraintStart_toStartOf="@id/button_home"
         app:layout_constraintEnd_toEndOf="@id/button_home"
-        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_home"
         />
 
@@ -105,7 +165,7 @@
         android:textColor="@color/colorBlack"
         app:layout_constraintStart_toStartOf="@id/button_rooms"
         app:layout_constraintEnd_toEndOf="@id/button_rooms"
-        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_rooms"
         />
 
@@ -117,7 +177,7 @@
         android:textColor="@color/colorBlack"
         app:layout_constraintStart_toStartOf="@id/button_radar"
         app:layout_constraintEnd_toEndOf="@id/button_radar"
-        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_radar"
         />
 
@@ -129,7 +189,7 @@
         android:textColor="@color/colorBlack"
         app:layout_constraintStart_toStartOf="@id/button_perfil"
         app:layout_constraintEnd_toEndOf="@id/button_perfil"
-        app:layout_constraintBottom_toBottomOf="@id/rectangle_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_perfil"
         />
 

@@ -41,7 +41,7 @@ class RoomActivity : AppCompatActivity() {
         val textRoom: TextView = findViewById<TextView>(R.id.text_room)
         textRoom.setTextColor(resources.getColor(R.color.colorButtons))
 
-        val buttonHome: ImageView = findViewById<ImageView>(R.id.button_home)
+        val buttonHome: ImageView = findViewById<ImageView>(R.id.rectangle_bottom_home)
         buttonHome.setOnClickListener {
             val intent = Intent(this@RoomActivity, HomeActivity::class.java)
             intent.putExtra("key", "Kotlin")
@@ -49,7 +49,7 @@ class RoomActivity : AppCompatActivity() {
             this.overridePendingTransition(0, 0)
         }
 
-        val buttonRadar: ImageView = findViewById<ImageView>(R.id.button_radar)
+        val buttonRadar: ImageView = findViewById<ImageView>(R.id.rectangle_bottom_radar)
         buttonRadar.setOnClickListener {
             val intent = Intent(this@RoomActivity, MainActivity::class.java)
             intent.putExtra("key", "Kotlin")
@@ -57,7 +57,7 @@ class RoomActivity : AppCompatActivity() {
             this.overridePendingTransition(0, 0)
         }
 
-        val buttonPerfil: ImageView = findViewById<ImageView>(R.id.button_perfil)
+        val buttonPerfil: ImageView = findViewById<ImageView>(R.id.rectangle_bottom_perfil)
         buttonPerfil.setOnClickListener {
             val intent = Intent(this@RoomActivity, PerfilActivity::class.java)
             intent.putExtra("key", "Kotlin")
@@ -65,7 +65,8 @@ class RoomActivity : AppCompatActivity() {
             this.overridePendingTransition(0, 0)
 
         }
-// Lookup the recyclerview in activity layout
+
+        // Lookup the recyclerview in activity layout
         val rvContacts = findViewById<View>(R.id.rvContacts) as RecyclerView
         // Initialize contacts
         contacts = Rooms.createContactsList(40)

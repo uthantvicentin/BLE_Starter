@@ -17,14 +17,9 @@
 package com.punchthrough.blestarterappandroid
 
 import android.bluetooth.le.ScanResult
-import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.Paint
-import android.graphics.RectF
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.punchthrough.blestarterappandroid.ble.CustomView
 import kotlinx.android.synthetic.main.row_scan_result.view.device_name
 import kotlinx.android.synthetic.main.row_scan_result.view.distancia
 import kotlinx.android.synthetic.main.row_scan_result.view.mac_address

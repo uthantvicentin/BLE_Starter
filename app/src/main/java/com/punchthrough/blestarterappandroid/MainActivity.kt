@@ -40,11 +40,10 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SimpleItemAnimator
 import com.punchthrough.blestarterappandroid.ble.ConnectionEventListener
 import com.punchthrough.blestarterappandroid.ble.ConnectionManager
-import com.punchthrough.blestarterappandroid.ble.CustomView
+import com.punchthrough.blestarterappandroid.layouts.CustomView
 import com.punchthrough.blestarterappandroid.layouts.HomeActivity
 import com.punchthrough.blestarterappandroid.layouts.PerfilActivity
 import com.punchthrough.blestarterappandroid.layouts.RoomActivity
-import com.punchthrough.blestarterappandroid.layouts.ScreenLoginActivity
 import kotlinx.android.synthetic.main.activity_main.scan_button
 import kotlinx.android.synthetic.main.activity_main.scan_results_recycler_view
 import org.jetbrains.anko.alert
@@ -107,7 +106,7 @@ class MainActivity : AppCompatActivity() {
         val textRadar: TextView = findViewById<TextView>(R.id.text_radar)
         textRadar.setTextColor(resources.getColor(R.color.colorButtons) )
 
-        val buttonHome: ImageView = findViewById<ImageView>(R.id.button_home)
+        val buttonHome: ImageView = findViewById<ImageView>(R.id.rectangle_bottom_home)
         buttonHome.setOnClickListener {
             val intent = Intent(this@MainActivity, HomeActivity::class.java)
             intent.putExtra("key", "Kotlin")
@@ -115,7 +114,7 @@ class MainActivity : AppCompatActivity() {
             this.overridePendingTransition(0, 0)
         }
 
-        val buttonRoom: ImageView = findViewById<ImageView>(R.id.button_rooms)
+        val buttonRoom: ImageView = findViewById<ImageView>(R.id.rectangle_bottom_room)
         buttonRoom.setOnClickListener {
             val intent = Intent(this@MainActivity, RoomActivity::class.java)
             intent.putExtra("key", "Kotlin")
@@ -123,7 +122,7 @@ class MainActivity : AppCompatActivity() {
             this.overridePendingTransition(0, 0)
         }
 
-        val buttonPerfil: ImageView = findViewById<ImageView>(R.id.button_perfil)
+        val buttonPerfil: ImageView = findViewById<ImageView>(R.id.rectangle_bottom_perfil)
         buttonPerfil.setOnClickListener {
             val intent = Intent(this@MainActivity, PerfilActivity::class.java)
             intent.putExtra("key", "Kotlin")

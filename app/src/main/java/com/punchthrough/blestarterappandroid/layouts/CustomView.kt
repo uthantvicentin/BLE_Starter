@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.punchthrough.blestarterappandroid.ble
+package com.punchthrough.blestarterappandroid.layouts
 
 import android.content.Context
 import android.graphics.Canvas
@@ -31,7 +31,7 @@ class CustomView : View {
     private val firstxPos = FloatArray(360)
     private val firstyPos = FloatArray(360)
     private val secondxPos = FloatArray(360)
-    private val secondyPos = FloatArray(360)
+    private val secondyPos = FloatArray( 360)
 
     constructor(context: Context?) : super(context) {
         init(null)

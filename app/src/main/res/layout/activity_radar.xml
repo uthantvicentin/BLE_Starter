@@ -99,7 +99,7 @@
         tools:visibility="invisible"
         />
 
-    <com.punchthrough.blestarterappandroid.ble.CustomView
+    <com.punchthrough.blestarterappandroid.layouts.CustomView
         android:id="@+id/customView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

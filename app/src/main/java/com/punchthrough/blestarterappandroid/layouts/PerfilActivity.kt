@@ -35,7 +35,7 @@ class PerfilActivity : AppCompatActivity() {
         val textPerfil: TextView = findViewById<TextView>(R.id.text_perfil)
         textPerfil.setTextColor(resources.getColor(R.color.colorButtons) )
 
-        val buttonHome: ImageView = findViewById<ImageView>(R.id.button_home)
+        val buttonHome: ImageView = findViewById<ImageView>(R.id.rectangle_bottom_home)
         buttonHome.setOnClickListener {
             val intent = Intent(this@PerfilActivity, HomeActivity::class.java)
             intent.putExtra("key", "Kotlin")
@@ -43,7 +43,7 @@ class PerfilActivity : AppCompatActivity() {
             this.overridePendingTransition(0, 0)
         }
 
-        val buttonRoom: ImageView = findViewById<ImageView>(R.id.button_rooms)
+        val buttonRoom: ImageView = findViewById<ImageView>(R.id.rectangle_bottom_room)
         buttonRoom.setOnClickListener {
             val intent = Intent(this@PerfilActivity, RoomActivity::class.java)
             intent.putExtra("key", "Kotlin")
@@ -51,7 +51,7 @@ class PerfilActivity : AppCompatActivity() {
             this.overridePendingTransition(0, 0)
         }
 
-        val buttonRadar: ImageView = findViewById<ImageView>(R.id.button_radar)
+        val buttonRadar: ImageView = findViewById<ImageView>(R.id.rectangle_bottom_radar)
         buttonRadar.setOnClickListener {
             val intent = Intent(this@PerfilActivity, MainActivity::class.java)
             intent.putExtra("key", "Kotlin")
