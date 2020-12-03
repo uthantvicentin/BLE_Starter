@@ -1,43 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_50sdp"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
+    android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/_10sdp"
     android:layout_marginStart="@dimen/_10sdp"
     android:layout_marginEnd="@dimen/_10sdp"
-    android:background="@drawable/background_rooms"
     >
 
-    <TextView
-        android:id="@+id/contact_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_weight="1"
-        android:layout_gravity="center"
-        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/message_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="@dimen/_15sdp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        />
+        <ImageView
+            android:id="@+id/cor_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background_rooms_green"
+         />
 
-    <TextView
-        android:id="@+id/text_occupation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_weight="1"
-        android:text="Ocupação: 1/25"
-        android:layout_gravity="center"
-        />
+        <TextView
+            android:id="@+id/room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Name"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/rasa_semibold"
+            android:includeFontPadding="false"
+            />
+
+        <ImageView
+            android:id="@+id/dividing_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            app:layout_constraintTop_toBottomOf="@id/room_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/colorBlack"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            />
+
+        <TextView
+            android:id="@+id/text_occupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dividing_line"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Ocupação:"
+            android:textSize="@dimen/_15ssp"
+            />
+
+        <TextView
+            android:id="@+id/occupation_actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dividing_line"
+            app:layout_constraintStart_toEndOf="@id/text_occupation"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="1 "
+            android:textSize="@dimen/_15ssp"
+            />
+
+        <TextView
+            android:id="@+id/bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dividing_line"
+            app:layout_constraintStart_toEndOf="@id/occupation_actual"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="/"
+            android:textSize="@dimen/_15ssp"
+            />
+
+        <TextView
+            android:id="@+id/occupation_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dividing_line"
+            app:layout_constraintStart_toEndOf="@id/bar"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="1"
+            android:textSize="@dimen/_15ssp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>

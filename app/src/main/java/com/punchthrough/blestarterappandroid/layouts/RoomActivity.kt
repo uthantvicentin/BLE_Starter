@@ -31,6 +31,7 @@ import com.punchthrough.blestarterappandroid.classes.Rooms
 
 class RoomActivity : AppCompatActivity() {
     lateinit var contacts: ArrayList<Rooms>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room)
@@ -69,7 +70,13 @@ class RoomActivity : AppCompatActivity() {
         // Lookup the recyclerview in activity layout
         val rvContacts = findViewById<View>(R.id.rvContacts) as RecyclerView
         // Initialize contacts
-        contacts = Rooms.createContactsList(40)
+
+        val names: Array<String> = arrayOf("Biblioteca", "Laboratório I", "Laboratório II", "Auditório", "Sala 01", "Sala 02", "Sala 03", "Sala 04", "Diretoria", "Núcleo de Tecnologia")
+        val actual: Array<String> = arrayOf("30", "12", "20", "35", "6", "10", "15", "4", "7", "12")
+        val max: Array<String> = arrayOf("100", "45", "40", "60", "35", "35", "35", "35", "10", "20")
+
+        contacts = Rooms.createRoomsList(names.size, names, actual, max)
+
         // Create adapter passing in the sample user data
         val adapter = RoomViewHolder(contacts)
 

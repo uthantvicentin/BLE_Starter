@@ -24,8 +24,10 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlueDark">#2A4251</color>
     <color name="colorGray">#E6E8DD</color>
-    <color name="colorRed">#FF0000</color>
+    <color name="colorGreen">#0CE84A</color>
+    <color name="colorRed">#E82C0C</color>
     <color name="colorBlueRec">#0000FF</color>
+    <color name="colorYellow">#FFE70D</color>
     <color name="colorBlack">#000000</color>
     <color name="colorTextHint">#7B7B7B</color>
     <color name="colorPurpleLogo">#4703A6</color>

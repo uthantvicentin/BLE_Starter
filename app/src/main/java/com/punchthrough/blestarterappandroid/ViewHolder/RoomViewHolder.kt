@@ -1,7 +1,7 @@
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.punchthrough.blestarterappandroid.R
@@ -14,8 +14,10 @@ class RoomViewHolder (private val mContacts: List<Rooms>) : RecyclerView.Adapter
     inner class ViewHolder(listItemView: View) : RecyclerView.ViewHolder(listItemView) {
         // Your holder should contain and initialize a member variable
         // for any view that will be set as you render a row
-        val nameTextView = itemView.findViewById<TextView>(R.id.contact_name)
-        val messageButton = itemView.findViewById<Button>(R.id.message_button)
+        val nameTextView = itemView.findViewById<TextView>(R.id.room_name)
+        val actualTextView = itemView.findViewById<TextView>(R.id.occupation_actual)
+        val maxTextView = itemView.findViewById<TextView>(R.id.occupation_max)
+        val colorLabel = itemView.findViewById<ImageView>(R.id.cor_label)
     }
 
     // ... constructor and member variables
@@ -34,11 +36,32 @@ class RoomViewHolder (private val mContacts: List<Rooms>) : RecyclerView.Adapter
         // Get the data model based on position
         val contact: Rooms = mContacts.get(position)
         // Set item views based on your views and data model
-        val textView = viewHolder.nameTextView
-        textView.setText(contact.name)
-        val button = viewHolder.messageButton
-        button.text = if (contact.isOnline) "Message" else "Offline"
-        button.isEnabled = contact.isOnline
+        val textViewName = viewHolder.nameTextView
+        textViewName.text = contact.name
+
+        val textViewActual = viewHolder.actualTextView
+        textViewActual.text = contact.actualOccupation
+
+        val textViewMax = viewHolder.maxTextView
+        textViewMax.text = contact.maxOccupation
+
+        val imageViewLabel = viewHolder.colorLabel
+
+        val max = contact.maxOccupation.toInt()
+        val actual = contact.actualOccupation.toInt()
+
+        when {
+            actual < (max * 0.5) -> {
+                imageViewLabel.setImageResource(R.drawable.background_rooms_green)
+            }
+            actual < (max * 0.7) -> {
+                imageViewLabel.setImageResource(R.drawable.background_rooms_yellow)
+            }
+            else -> {
+                imageViewLabel.setImageResource(R.drawable.background_rooms_red)
+            }
+        }
+
     }
 
     // Returns the total count of items in the list

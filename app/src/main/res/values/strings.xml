@@ -29,4 +29,5 @@
     <string name="perfil">Perfil</string>
     <string name="termos_servico">Ao continuar você concorda com nossos <font color='#00000F'> <u>termos de serviço.</u> </font> </string>
     <string name="ocupacao">Ocupação:</string>
+    <string name="ocupation">Ocupação:</string>
 </resources>
