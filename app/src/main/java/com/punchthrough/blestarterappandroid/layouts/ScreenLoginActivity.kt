@@ -14,7 +14,7 @@ class ScreenLoginActivity : AppCompatActivity() {
 
         val buttonContinue: ImageView = findViewById<ImageView>(R.id.buttonContinue)
         buttonContinue.setOnClickListener {
-            val intent = Intent(this@ScreenLoginActivity, HomeActivity::class.java)
+            val intent = Intent(this@ScreenLoginActivity, RoomActivity::class.java)
             intent.putExtra("key", "Kotlin")
             startActivity(intent)
             this.overridePendingTransition(0, 0)

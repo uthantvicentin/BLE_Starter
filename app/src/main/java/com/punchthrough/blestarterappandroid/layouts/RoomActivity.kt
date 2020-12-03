@@ -72,7 +72,7 @@ class RoomActivity : AppCompatActivity() {
         // Initialize contacts
 
         val names: Array<String> = arrayOf("Biblioteca", "Laboratório I", "Laboratório II", "Auditório", "Sala 01", "Sala 02", "Sala 03", "Sala 04", "Diretoria", "Núcleo de Tecnologia")
-        val actual: Array<String> = arrayOf("30", "12", "20", "35", "6", "10", "15", "4", "7", "12")
+        val actual: Array<String> = arrayOf("30", "12", "20", "35", "06", "10", "15", "04", "07", "12")
         val max: Array<String> = arrayOf("100", "45", "40", "60", "35", "35", "35", "35", "10", "20")
 
         contacts = Rooms.createRoomsList(names.size, names, actual, max)
