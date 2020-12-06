@@ -33,7 +33,7 @@
         android:layout_marginTop="@dimen/_15sdp"
         app:layout_constraintTop_toTopOf="parent"
         android:tint="@color/colorGray"
-        app:srcCompat="@drawable/button_continue"
+        app:srcCompat="@drawable/background_buttons"
         />
 
     <EditText
@@ -60,19 +60,21 @@
         app:layout_constraintBottom_toBottomOf="@id/background_search"
         app:layout_constraintEnd_toEndOf="@id/background_search"
         android:layout_marginEnd="@dimen/_10sdp"
-        app:srcCompat="@drawable/button_continue"
+        app:srcCompat="@drawable/background_buttons"
+        android:tint="@color/colorButtons"
         />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_25sdp"
+        android:layout_width="23dp"
+        android:layout_height="28dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/ic_search"
-        app:tint="@color/colorGray"
-        app:layout_constraintTop_toTopOf="@id/button_search_room"
         app:layout_constraintBottom_toBottomOf="@id/button_search_room"
+        app:layout_constraintEnd_toEndOf="@id/button_search_room"
         app:layout_constraintStart_toStartOf="@id/button_search_room"
-        app:layout_constraintEnd_toEndOf="@id/button_search_room"/>
+        app:layout_constraintTop_toTopOf="@id/button_search_room"
+        app:tint="@color/colorGray"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvContacts"

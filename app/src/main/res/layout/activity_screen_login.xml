@@ -33,23 +33,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/transparent"
         />
 
     <ImageView
         android:id="@+id/buttonContinue"
         android:adjustViewBounds="true"
-        android:background="@drawable/tint_ripple_button_continue"
-        android:clickable="true"
-        android:focusable="true"
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_46sdp"
-        android:layout_marginBottom="@dimen/_40sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/tint_ripple_button_continue"
         android:tintMode="src_in"
-        android:src="@drawable/button_continue"
+        android:src="@drawable/background_button_continue"
+        android:layout_marginBottom="@dimen/_40sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="@android:color/transparent" />
+        app:tint="@android:color/transparent"
+        />
 
 
     <TextView
@@ -69,6 +71,7 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonContinue"
         app:layout_constraintStart_toStartOf="@+id/buttonContinue"
         app:layout_constraintTop_toTopOf="@+id/buttonContinue"
+
         />
 
     <TextView

@@ -26,7 +26,7 @@ class RoomViewHolder (private val mContacts: List<Rooms>) : RecyclerView.Adapter
         val context = parent.context
         val inflater = LayoutInflater.from(context)
         // Inflate the custom layout
-        val contactView = inflater.inflate(R.layout.rooms_items_layout, parent, false)
+        val contactView = inflater.inflate(R.layout.activity_room_item_layout, parent, false)
         // Return a new holder instance
         return ViewHolder(contactView)
     }
